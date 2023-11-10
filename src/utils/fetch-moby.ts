@@ -7,6 +7,7 @@ type Result = {
 };
 
 export async function fetchMoby(query: string) {
+  if (query === "") return { results: [], mobyChapters };
   const normalizedQuery = query.toLowerCase();
   const results: Result[] = [];
   mobyChapters.forEach((chapter, chapterIndex) => {
