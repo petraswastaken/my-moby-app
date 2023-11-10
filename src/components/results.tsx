@@ -23,7 +23,7 @@ export async function Results({ query }: { query: string }) {
 
         return (
           <div
-            className="mt-4"
+            className="mt-4 break-all"
             key={JSON.stringify(result)}
             style={{
               fontSize: `${58.5 / results.length}vw`,
